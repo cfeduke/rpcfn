@@ -4,7 +4,7 @@ require 'time'
 
 class Time
   def to_s
-    self.strftime('%H:%M:%S') + ',' + (self.usec / 1_000).to_s
+    self.strftime('%H:%M:%S') + ',' + "%.3d" % (self.usec / 1_000)
   end
 end
 
